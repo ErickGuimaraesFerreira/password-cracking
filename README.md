@@ -30,6 +30,8 @@ O primeiro passo é usar o 7z2john para extrair o hash do arquivo dwn.7z e salv�
 └─# 7z2john dwn.7z > hash.txt
 ATTENTION: the hashes might contain sensitive encrypted data. Be careful when sharing or posting these hashes
 ```
+![Imagem Primeiro Comando](1.png)
+
 ## 2. Quebra da Senha com John the Ripper
 Com o hash salvo, utilizamos o **John the Ripper** e a wordlist **rockyou.txt** para iniciar um ataque de dicionário e encontrar a senha.
 ```
@@ -48,6 +50,7 @@ passw0rd     	(dwn.7z)
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed.
 ```
+![Imagem Segundo Comando](2.png)
 ## 3. Exibição da Senha Encontrada
 
 Após a conclusão do processo, o comando **--show** é usado para exibir a senha que foi quebrada e associada ao hash.
@@ -59,7 +62,7 @@ dwn.7z:passw0rd
 1 password hash cracked, 0 left
 ```
 A senha do arquivo dwn.7z foi descoberta como sendo **passw0rd.**
-
+![Imagem Terceiro Comando](3.png)
 ## Conclusão
 Esta demonstração ilustra como ferramentas de segurança podem ser usadas para recuperar senhas de arquivos compactados. Ela ressalta a importância de utilizar senhas fortes e complexas para proteger dados sensíveis, pois senhas comuns podem ser facilmente descobertas por meio de ataques de dicionário. **O processo de descoberta dessa senha **(passw0rd)** durou apenas **10 segundos**.**
 
