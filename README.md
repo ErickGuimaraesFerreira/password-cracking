@@ -6,7 +6,7 @@ Este repositório demonstra o processo de extração do hash de um arquivo .7z p
 # Visão Geral
 O processo envolve duas etapas principais:
 
-* Extração do Hash: Utiliza-se a ferramenta 7z2john para extrair o hash da senha do arquivo dwn.7z.
+* Extração do Hash: Utiliza-se a ferramenta *7z2john* para extrair o hash da senha do arquivo dwn.7z.
 
 * Quebra da Senha: Emprega-se o John the Ripper, uma popular ferramenta de quebra de senhas, para descobrir a senha original a partir do hash extraído, utilizando uma lista de palavras (wordlist).
 
